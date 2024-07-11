@@ -7,5 +7,44 @@
 h1 {
     text-align: center;
     font-size: 48px;
-    padding: 30px;
+    padding-top: 30px;
 }
+
+/* Todo: Loader start here */
+.parent-flex {
+    display: flex;
+    border: 1px solid red;
+    margin: 30px 100px;
+    padding: 50px 0;
+    justify-content: space-evenly;
+}
+
+.loader1 {
+    border: 20px solid #eaf0f6;
+    border-radius: 50%;
+    border-top: 20px solid #ff7a59;
+    width: 200px;
+    height: 200px;
+    animation: spinner 4s linear infinite;
+}
+
+.loader2 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border: 20px solid green;
+    border-radius: 50%;
+    border-top-color: silver;
+    border-bottom-color: silver;
+    animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Todo: Loader end here */
